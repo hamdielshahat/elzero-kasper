@@ -180,14 +180,6 @@ header .seach-form i {
 .landing .content {
   max-width: 500px;
 }
-@media (max-width: 767px) {
-  .landing .text {
-    width: 100%;
-  }
-  .landing .content {
-    max-width: 100%;
-  }
-}
 .landing .content h2 {
   font-size: 32px;
   line-height: 1.5;
@@ -204,13 +196,6 @@ header .seach-form i {
   transform: translateY(-50);
   color: #ccc;
 }
-
-@media (max-width: 767px) {
-  .change-bg {
-    display: none;
-  }
-}
-
 .fa-angle-left.change-bg {
   left: 30px;
 }
@@ -221,20 +206,15 @@ header .seach-form i {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 30px;
+  bottom: -150px;
   display: flex;
+  z-index: 58;
 }
-.bullets li {
+.bulletsbullet li {
   width: 20px;
   height: 20px;
   border: 1px solid #ccc;
   border-radius: 50%;
-  margin-right: 10px;
-}
-.bullets li.active-bullet {
-  background-color: var(--main-color);
-  border-color: var(--main-color);
-  /* border: none; */
 }
 /* cange-background ----------------------------------------------- End */
 /* Landing Page ---------------------------------------------------End */
