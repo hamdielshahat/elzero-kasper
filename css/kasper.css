@@ -467,7 +467,7 @@ header .seach-form i {
 /* Video --------------------------------------------------- Start */
 .video {
   position: relative;
-  max-height: 100vh;
+  /* max-height: 100vh; */
 }
 .video::before {
   content: "";
