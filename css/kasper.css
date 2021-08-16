@@ -54,7 +54,6 @@ ul {
   padding-bottom: var(--padding);
 }
 .main-heading {
-  padding: 100px;
   text-align: center;
   /* padding: 60px; */
 }
@@ -64,6 +63,8 @@ ul {
   margin-bottom: 50px;
   /* max-width: 50%; */
   text-transform: uppercase;
+  /* width: fit-content; */
+  /* font-weight: normal; */
 }
 .main-heading h2:before {
   content: "";
@@ -723,6 +724,9 @@ header .seach-form i {
 /* quotes --------------------------------------------------------------- End */
 
 /* Pricing --------------------------------------------------------------- Start */
+.pricing {
+  padding: var(--padding) 0;
+}
 .prices {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -896,3 +900,138 @@ header .seach-form i {
   }
 }
 /* Subscribe --------------------------------------------------------------- End */
+
+/* contact-us --------------------------------------------------------------- Start */
+.contact-us {
+  padding: var(--padding) 0;
+}
+.contact-us .content {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 5%; */
+}
+@media (max-width: 767px) {
+  .contact-us .content {
+    flex-direction: column;
+  }
+}
+.contact-us .content form {
+  flex-basis: 70%;
+}
+.contact-us .content form .main-input {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+}
+.contact-us .content form .main-input:focus {
+  outline: none;
+}
+.contact-us .content form textarea.main-input {
+  height: 200px;
+}
+.contact-us .content form input[type="submit"] {
+  padding: 20px;
+  background-color: var(--main-color);
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  margin-left: auto;
+}
+
+.contact-us .content .info {
+  flex-basis: 25%;
+}
+@media (max-width: 767px) {
+  .contact-us .content .info {
+    order: -1;
+    text-align: center;
+  }
+}
+.contact-us .content .info h4 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.contact-us .content .info span {
+  display: block;
+  margin-bottom: 10px;
+  color: #777;
+}
+.contact-us .content .info h4:nth-of-type(2) {
+  margin-top: 95px;
+}
+
+@media (max-width: 767px) {
+  .contact-us .content .info h4:nth-of-type(2) {
+    margin-top: 50px;
+  }
+}
+
+.contact-us .content .info address {
+  line-height: 1.8;
+  color: #777;
+}
+@media (max-width: 767px) {
+  .contact-us .content .info address {
+    margin-bottom: 30px;
+  }
+}
+/* contact-us --------------------------------------------------------------- End */
+
+/* footer --------------------------------------------------------------- start */
+footer {
+  padding: var(--padding) 0;
+  text-align: center;
+  background-image: url("../images/shuffle-01.jpg");
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 0 0 / 60%);
+}
+
+footer .container {
+  position: relative;
+}
+
+footer .container p:not(.copy-right) {
+  position: relative;
+  text-transform: uppercase;
+  margin: 30px 0;
+  /* border-bottom: 1px solid #777; */
+  /* width: fit-content; */
+}
+
+footer .container p:not(.copy-right)::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 15%;
+  background-color: #ccc;
+}
+
+footer .social-icons i {
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+footer .container p span {
+  color: var(--main-color);
+}
+
+/* footer --------------------------------------------------------------- End */
